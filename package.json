@@ -1,0 +1,27 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.html",
+  "scripts": {
+    "build:all": "npm run build:pages && npm run compile:css:prod",
+    "build:pages": "rimraf --glob build && mkdir build && copyfiles --up 1 ./src/favicon.ico ./src/*.js ./src/images/* ./src/*.html ./build",
+    "serve:prod": "npm run build:all && serve build",
+    "serve:dev": "npm run compile:css:dev && serve src",
+    "compile:css:prod": "cross-env NODE_ENV=production npx tailwindcss build -i ./src/styles.css -o ./build/index.css",
+    "compile:css:dev": "npx tailwindcss build -i ./src/styles.css -o ./src/index.css",
+    "watch:dev": "onchange -i -k -d 1000 \"src/**/*.js\" \"src/**/*.html\" -- npm run serve:dev"
+  },
+  "author": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "copyfiles": "^2.4.1",
+    "cross-env": "^7.0.3",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^10.0.1",
+    "postcss-import": "^15.0.1",
+    "rimraf": "^5.0.5",
+    "serve": "^14.2.1",
+    "tailwindcss": "^3.3.5"
+  }
+}
