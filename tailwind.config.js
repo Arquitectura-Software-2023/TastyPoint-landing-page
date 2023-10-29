@@ -8,6 +8,12 @@ module.exports = {
           DEFAULT: '#009D9A',
           hover: '#004e4d'
         },
+        'secondary': {
+          DEFAULT: '#4589FF',
+        },
+        'tertiary': {
+          DEFAULT: '#31135E',
+        },
       },
     },
   },
