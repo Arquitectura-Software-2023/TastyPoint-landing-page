@@ -8,34 +8,37 @@
         <link rel="stylesheet" href="./index.css" />
         <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     </head>
-    <body>
-        <header id="Header" class="Header">
-            <section id="NavBar" class="flex-row bg-black">
-                <span class="flex-1">
-                    <img src="./images/logo.png" alt="Tasty Point logo" />
-                    <p>Tasty Point</p>
+    <body class="bg-primary">
+        <header
+            class="max-h-36 [&>*]:max-h-24 [&>*]:text-center [&>*]:align-middle [&>*]:items-center"
+        >
+            <section class="flex flex-row">
+                <span class="flex flex-row max-h-12">
+                    <p class="items-center">Tasty Point</p>
                 </span>
-                <span class="NavBar-Center">
-                    <a href="#Home">Home</a>
-                    <a href="#AboutUs">About Us</a>
-                    <a href="#Segments">Segments</a>
-                    <a href="#Pricing">Pricing</a>
-                    <a href="#FAQs">FAQs</a>
+                <span
+                    class="flex flex-row gap-2 flex-1 [&>*]:flex-1 [&>*]:rounded-xl items-center align-middle"
+                >
+                    <a class="hover:bg-primary-hover" href="#Home">Home</a>
+                    <a class="hover:bg-primary-hover" href="#AboutUs">About Us</a>
+                    <a class="hover:bg-primary-hover" href="#Segments">Segments</a>
+                    <a class="hover:bg-primary-hover" href="#Pricing">Pricing</a>
+                    <a class="hover:bg-primary-hover" href="#FAQs">FAQs</a>
                 </span>
-                <span class="NavBar-Right">
-                    <button id="SignIn">Sign In</button>
-                    <button id="SignUp">Sign Up</button>
+                <span class="flex flex-row">
+                    <button>Sign In</button>
+                    <button>Sign Up</button>
                 </span>
             </section>
         </header>
-        <main class="Main">
+        <main>
             <section id="Home">Home</section>
             <section id="Audience">Audience</section>
             <section id="AboutUs">About Us</section>
             <section id="Consumers">Consumers</section>
             <section id="Business">Business</section>
         </main>
-        <footer class="Footer">Footer</footer>
+        <footer>Footer</footer>
         <script src="index.js"></script>
     </body>
 </html>

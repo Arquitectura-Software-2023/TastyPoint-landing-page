@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': {
+          DEFAULT: '#009D9A',
+          hover: '#004e4d'
+        },
+      },
+    },
   },
   plugins: [],
 }

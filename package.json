@@ -6,15 +6,16 @@
   "scripts": {
     "build:all": "npm run build:pages && npm run compile:css:prod",
     "build:pages": "rimraf --glob build && mkdir build && copyfiles --up 1 ./src/favicon.ico ./src/*.js ./src/images/* ./src/*.html ./build",
-    "serve:prod": "npm run build:all && serve build",
-    "serve:dev": "npm run compile:css:dev && serve src",
+    "serve:prod": "npm run build:all && serve -n build",
+    "serve:dev": "npm run compile:css:dev && serve -n src",
     "compile:css:prod": "cross-env NODE_ENV=production npx tailwindcss build -i ./src/styles.css -o ./build/index.css",
     "compile:css:dev": "npx tailwindcss build -i ./src/styles.css -o ./src/index.css",
-    "watch:dev": "onchange -i -k -d 1000 \"src/**/*.js\" \"src/**/*.html\" -- npm run serve:dev"
+    "watch:dev": "concurrently --kill-others \"npm run serve:dev\" \"onchange -i -k -d 200 \"src/**/*.js\" \"src/**/*.html\" -- npm run compile:css:dev\""
   },
   "author": "",
   "devDependencies": {
     "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
     "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
     "onchange": "^7.1.0",
