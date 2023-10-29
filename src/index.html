@@ -39,8 +39,8 @@
         </header>
         <main>
             <section id="Home">
-                <div>
-                    <div>
+                <div class="grid grid-cols-1 overflow-hidden lg:grid-cols-2">
+                    <div class="flex-1 lg:w-1/2 lg:row-span-2">
                         <h1>
                             The best way to help to reduce food waste in Peru
                         </h1>
@@ -51,44 +51,42 @@
                             as VR food menus.
                         </span>
                     </div>
-                    <div>
-                        <div class="bg-secondary rounded-2xl">
-                            <h2>For Consumers</h2>
-                            <p>
-                                Do you want to help reduce food waste in Peru
-                                and, in the same way, save money when buying in
-                                restaurants? Then dare to try this application:
-                            </p>
-                            <button
-                                type="button"
-                                label="Consumers Get Started"
-                                alt="Consumers Get Started"
-                                class="bg-tertiary rounded-lg text-white"
-                            >
-                                Get Started
-                            </button>
-                        </div>
-                        <div class="bg-white rounded-2xl">
-                            <h2>For Business</h2>
-                            <p>
-                                Do you want to increase your income by reducing
-                                product losses? Do you want to be able to
-                                control your waste efficiently? We recommend you
-                                try our application:
-                            </p>
-                            <button
-                                type="button"
-                                label="Business Get Started"
-                                alt="Business Get Started"
-                                class="bg-tertiary rounded-lg text-white"
-                            >
-                                Get Started
-                            </button>
-                        </div>
+                    <div class="lg:w-1/2 bg-secondary rounded-2xl">
+                        <h2>For Consumers</h2>
+                        <p>
+                            Do you want to help reduce food waste in Peru and,
+                            in the same way, save money when buying in
+                            restaurants? Then dare to try this application:
+                        </p>
+                        <button
+                            type="button"
+                            label="Consumers Get Started"
+                            alt="Consumers Get Started"
+                            class="text-white rounded-lg bg-tertiary"
+                        >
+                            Get Started
+                        </button>
+                    </div>
+                    <div class="bg-white lg:w-1/2 rounded-2xl">
+                        <h2>For Business</h2>
+                        <p>
+                            Do you want to increase your income by reducing
+                            product losses? Do you want to be able to control
+                            your waste efficiently? We recommend you try our
+                            application:
+                        </p>
+                        <button
+                            type="button"
+                            label="Business Get Started"
+                            alt="Business Get Started"
+                            class="text-white rounded-lg bg-tertiary"
+                        >
+                            Get Started
+                        </button>
                     </div>
                 </div>
-                <div>
-                    <img src="./images/food-1.png" alt="Food Waste" />
+                <div class="grid grid-cols-1 overflow-hidden lg:grid-cols-2">
+                    <img src="./images/food.png" alt="Food Waste" />
                     <div>
                         <h1>Let's help in this important fight</h1>
                         <span>
@@ -100,8 +98,7 @@
                         </span>
                     </div>
                 </div>
-                <div>
-                    <img src="./images/food-1.png" alt="Food Waste" />
+                <div class="grid grid-cols-1 overflow-hidden lg:grid-cols-2">
                     <div>
                         <h1>We offer an effective solution for this problem</h1>
                         <span>
@@ -114,7 +111,7 @@
                             type="button"
                             label="Business Get Started"
                             alt="Business Get Started"
-                            class="bg-tertiary rounded-lg text-white"
+                            class="text-white rounded-lg bg-tertiary"
                         >
                             Consumers
                         </button>
@@ -122,48 +119,61 @@
                             type="button"
                             label="Business Get Started"
                             alt="Business Get Started"
-                            class="bg-tertiary rounded-lg text-white"
+                            class="text-white rounded-lg bg-tertiary"
                         >
                             Business
                         </button>
                     </div>
+                    <img src="./images/delivery.png" alt="Food Waste" />
                 </div>
             </section>
-            <section id="AboutUs">
-                <div>
-                    <h1>Mission</h1>
-                    <span>
-                        We are a technology company committed to creating
-                        efficient and innovative web and mobile applications
-                        that allow our users to access a wide range of options
-                        in the food area in an agile, sustainable and economical
-                        way.
-                    </span>
+            <section
+                id="AboutUs"
+                class="grid grid-flow-col grid-rows-3 overflow-hidden text-center lg:grid-cols-2"
+            >
+                <div class="bg-white lg:w-1/2 rounded-2xl rotate-12">
+                    <div class="-rotate-12">
+                        <h1 class="text-8xl text-bold">Mission</h1>
+                        <span>
+                            We are a technology company committed to creating
+                            efficient and innovative web and mobile applications
+                            that allow our users to access a wide range of
+                            options in the food area in an agile, sustainable
+                            and economical way.
+                        </span>
+                    </div>
                 </div>
-                <div>
-                    <h1>Vision</h1>
-                    <span>
-                        Promote a culture of responsible and effective
-                        consumption, where all our affiliated clients can access
-                        nutritious, delicious and affordable food. Likewise,
-                        contribute to the development of prepared food
-                        businesses in Peru, transforming what would be a loss
-                        due to waste into profits.
-                    </span>
+                <div class="bg-white lg:w-1/2 rounded-2xl rotate-12 lg:mt-4">
+                    <div class="-rotate-12">
+                        <h1 class="text-8xl text-bold">Vision</h1>
+                        <span>
+                            Promote a culture of responsible and effective
+                            consumption, where all our affiliated clients can
+                            access nutritious, delicious and affordable food.
+                            Likewise, contribute to the development of prepared
+                            food businesses in Peru, transforming what would be
+                            a loss due to waste into profits.
+                        </span>
+                    </div>
                 </div>
-                <div>
-                    <h1>About us</h1>
-                    <span>
-                        Tasty Point is a web application focused on online
-                        delivery, with quick access and easy navigation for its
-                        users, Tasty Point promises to reduce the percentage of
-                        food wasted. For this, our Web APP brings together
-                        different restaurants or food chains to take advantage
-                        of their dishes or products that were not consumed, but
-                        are in good condition for consumption. With the help of
-                        Tasty Point, finding dishes according to the user's
-                        preference at a good price is simple and cheap.
-                    </span>
+                <div
+                    class="lg:w-1/2 lg:row-span-2 bg-secondary rounded-2xl rotate-12"
+                >
+                    <div class="-rotate-12">
+                        <h1 class="text-8xl text-bold">About us</h1>
+                        <span>
+                            Tasty Point is a web application focused on online
+                            delivery, with quick access and easy navigation for
+                            its users, Tasty Point promises to reduce the
+                            percentage of food wasted. For this, our Web APP
+                            brings together different restaurants or food chains
+                            to take advantage of their dishes or products that
+                            were not consumed, but are in good condition for
+                            consumption. With the help of Tasty Point, finding
+                            dishes according to the user's preference at a good
+                            price is simple and cheap.
+                        </span>
+                    </div>
                 </div>
             </section>
             <section id="Audience">Audience</section>

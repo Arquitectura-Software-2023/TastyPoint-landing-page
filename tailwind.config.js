@@ -14,6 +14,9 @@ module.exports = {
         'tertiary': {
           DEFAULT: '#31135E',
         },
+        'quaternary': {
+          DEFAULT: '#3F1602',
+        },
       },
     },
   },
