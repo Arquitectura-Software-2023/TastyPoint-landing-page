@@ -10,14 +10,27 @@
     </head>
     <body class="bg-primary">
         <header
-            class="max-h-36 [&>*]:max-h-24 [&>*]:text-center [&>*]:align-middle [&>*]:items-center"
+            class="lg:h-24 lg:[&>*]:h-18 [&>*]:text-center [&>*]:align-middle align-middle [&>*]:items-center lg:px-8 fixed top-0 left-0 w-full bg-primary z-50"
         >
-            <section class="flex flex-row">
-                <span class="flex flex-row max-h-12">
-                    <p class="items-center">Tasty Point</p>
+            <section
+                class="flex flex-row items-center h-full align-middle lg:gap-4"
+            >
+                <span class="flex flex-row max-h-12 lg:gap-4 lg:w-1/2">
+                    <div class="lg:h-12 w-fit">
+                        <img
+                            class="h-full"
+                            src="./images/logo.png"
+                            alt="Tasty Point Logo"
+                        />
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <p class="font-semibold lg:text-2xl text-quaternary">
+                            Tasty Point
+                        </p>
+                    </div>
                 </span>
                 <span
-                    class="flex flex-row gap-2 flex-1 [&>*]:flex-1 [&>*]:rounded-xl items-center align-middle"
+                    class="flex flex-row h-full gap-2 flex-1 [&>*]:flex-1 [&>*]:rounded-xl items-center align-middle"
                 >
                     <a class="hover:bg-primary-hover" href="#Home">Home</a>
                     <a class="hover:bg-primary-hover" href="#AboutUs"
@@ -31,65 +44,112 @@
                     >
                     <a class="hover:bg-primary-hover" href="#FAQs">FAQs</a>
                 </span>
-                <span class="flex flex-row">
-                    <button>Sign In</button>
-                    <button>Sign Up</button>
+                <span class="flex flex-row lg:gap-4">
+                    <button
+                        class="text-quaternary bg-senary rounded-2xl lg:px-4 lg:py-2"
+                    >
+                        Sign In
+                    </button>
+                    <button
+                        class="text-quaternary bg-senary rounded-2xl lg:px-4 lg:py-2"
+                    >
+                        Sign Up
+                    </button>
                 </span>
             </section>
         </header>
-        <main>
-            <section id="Home">
-                <div class="grid grid-cols-1 overflow-hidden lg:grid-cols-2">
-                    <div class="flex-1 lg:w-1/2 lg:row-span-2">
-                        <h1>
+        <main class="flex flex-col m-auto lg:w-4/5 lg:space-y-12">
+            <section class="flex flex-col lg:p-36 lg:space-y-36" id="Home">
+                <div
+                    class="grid w-full grid-cols-1 overflow-hidden lg:gap-x-64 lg:grid-cols-2"
+                >
+                    <div
+                        class="flex flex-col flex-1 w-full mx-auto lg:space-y-8 lg:row-span-2"
+                    >
+                        <h1
+                            class="justify-start w-full font-semibold leading-loose align-middle text-quaternary lg:text-8xl"
+                        >
                             The best way to help to reduce food waste in Peru
                         </h1>
-                        <span>
+                        <span
+                            class="justify-start w-full leading-relaxed text-black lg:text-2xl"
+                        >
                             With Tasty Point, you can help fight food waste. We
                             have different environments according to the segment
                             to which it belongs with innovative solutions such
                             as VR food menus.
                         </span>
                     </div>
-                    <div class="lg:w-1/2 bg-secondary rounded-2xl">
-                        <h2>For Consumers</h2>
-                        <p>
-                            Do you want to help reduce food waste in Peru and,
-                            in the same way, save money when buying in
-                            restaurants? Then dare to try this application:
-                        </p>
-                        <button
-                            type="button"
-                            label="Consumers Get Started"
-                            alt="Consumers Get Started"
-                            class="text-white rounded-lg bg-tertiary"
-                        >
-                            Get Started
-                        </button>
-                    </div>
-                    <div class="bg-white lg:w-1/2 rounded-2xl">
-                        <h2>For Business</h2>
-                        <p>
-                            Do you want to increase your income by reducing
-                            product losses? Do you want to be able to control
-                            your waste efficiently? We recommend you try our
-                            application:
-                        </p>
-                        <button
-                            type="button"
-                            label="Business Get Started"
-                            alt="Business Get Started"
-                            class="text-white rounded-lg bg-tertiary"
-                        >
-                            Get Started
-                        </button>
+                    <div class="flex flex-col w-full space-y-12">
+                        <div class="w-full bg-secondary rounded-3xl lg:p-8">
+                            <h2
+                                class="font-bold text-quaternary lg:text-4xl lg:py-4"
+                            >
+                                For Consumers
+                            </h2>
+                            <p class="text-black">
+                                Do you want to help reduce food waste in Peru
+                                and, in the same way, save money when buying in
+                                restaurants?
+                            </p>
+                            <br />
+                            <p>Then dare to try this application:</p>
+                            <div class="flex items-end justify-end w-full">
+                                <button
+                                    type="button"
+                                    label="Consumers Get Started"
+                                    alt="Consumers Get Started"
+                                    class="text-white rounded-lg bg-tertiary lg:p-8"
+                                >
+                                    Get Started
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-full bg-quinary rounded-3xl lg:p-8">
+                            <h2
+                                class="font-bold text-quaternary lg:text-4xl lg:py-4"
+                            >
+                                For Business
+                            </h2>
+                            <p class="text-black">
+                                Do you want to increase your income by reducing
+                                product losses? Do you want to be able to
+                                control your waste efficiently?
+                            </p>
+                            <br />
+                            <p>We recommend you try our application:</p>
+                            <div class="flex items-end justify-end w-full">
+                                <button
+                                    type="button"
+                                    label="Business Get Started"
+                                    alt="Business Get Started"
+                                    class="text-white rounded-lg bg-tertiary lg:p-8"
+                                >
+                                    Get Started
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 overflow-hidden lg:grid-cols-2">
-                    <img src="./images/food.png" alt="Food Waste" />
-                    <div>
-                        <h1>Let's help in this important fight</h1>
-                        <span>
+                <div
+                    class="grid grid-cols-1 overflow-hidden lg:gap-x-24 lg:grid-cols-2"
+                >
+                    <img
+                        class="rounded-3xl"
+                        src="./images/food.png"
+                        alt="Food Waste"
+                    />
+                    <div
+                        class="flex flex-col flex-1 w-full mx-auto lg:space-y-8 lg:row-span-2"
+                    >
+                        <h1
+                            class="justify-start w-full font-semibold leading-loose align-middle text-quaternary lg:text-8xl"
+                        >
+                            Let's help in this important fight
+                        </h1>
+                        <span
+                            class="justify-start w-full leading-relaxed text-black lg:text-2xl"
+                        >
                             Did you know that, according to the UN, during the
                             year 2019, 17% of the total food available ended up
                             in the garbage cans of homes, retailers, restaurants
@@ -98,33 +158,53 @@
                         </span>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 overflow-hidden lg:grid-cols-2">
-                    <div>
-                        <h1>We offer an effective solution for this problem</h1>
-                        <span>
+                <div
+                    class="grid grid-cols-1 overflow-hidden lg:gap-x-24 lg:grid-cols-2"
+                >
+                    <div
+                        class="flex flex-col flex-1 w-full mx-auto lg:space-y-8 lg:row-span-2"
+                    >
+                        <h1
+                            class="justify-start w-full font-semibold leading-loose align-middle text-quaternary lg:text-8xl"
+                        >
+                            We offer an effective solution for this problem
+                        </h1>
+                        <span
+                            class="justify-start w-full leading-relaxed text-black lg:text-2xl"
+                        >
                             We offer specialized solutions for each sector,
                             whether you sell food products or if you are the one
                             who consumes them. We provide a series of
                             easy-to-use tools to help you help the planet.
                         </span>
-                        <button
-                            type="button"
-                            label="Business Get Started"
-                            alt="Business Get Started"
-                            class="text-white rounded-lg bg-tertiary"
-                        >
-                            Consumers
-                        </button>
-                        <button
-                            type="button"
-                            label="Business Get Started"
-                            alt="Business Get Started"
-                            class="text-white rounded-lg bg-tertiary"
-                        >
-                            Business
-                        </button>
+                        <div class="flex w-full">
+                            <div class="w-1/2 text-center">
+                                <button
+                                    type="button"
+                                    label="Business Get Started"
+                                    alt="Business Get Started"
+                                    class="text-white rounded-lg bg-tertiary lg:px-24 lg:py-4"
+                                >
+                                    Consumers
+                                </button>
+                            </div>
+                            <div class="w-1/2 text-center">
+                                <button
+                                    type="button"
+                                    label="Business Get Started"
+                                    alt="Business Get Started"
+                                    class="text-white rounded-lg bg-tertiary lg:px-24 lg:py-4"
+                                >
+                                    Business
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <img src="./images/delivery.png" alt="Food Waste" />
+                    <img
+                        class="rounded-3xl"
+                        src="./images/delivery.png"
+                        alt="Food Waste"
+                    />
                 </div>
             </section>
             <section

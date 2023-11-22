@@ -17,6 +17,12 @@ module.exports = {
         'quaternary': {
           DEFAULT: '#3F1602',
         },
+        'quinary': {
+          DEFAULT: '#FDFBEF',
+        },
+        'senary': {
+          DEFAULT: '#BE95FF',
+        },
       },
     },
   },
