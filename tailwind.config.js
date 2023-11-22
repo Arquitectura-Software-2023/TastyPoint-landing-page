@@ -24,6 +24,9 @@ module.exports = {
           DEFAULT: '#BE95FF',
         },
       },
+      height: {
+        'lg-video': '48rem',
+      },
     },
   },
   plugins: [],
