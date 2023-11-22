@@ -23,6 +23,9 @@ module.exports = {
         'senary': {
           DEFAULT: '#BE95FF',
         },
+        'septenary': {
+          DEFAULT: '#2F2F2F',
+        },
       },
       height: {
         'lg-video': '48rem',
